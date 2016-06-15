@@ -1,0 +1,951 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Person": {
+				"panelColor": "#eee",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 10,
+						"Y": 43
+					}
+				}
+			},
+			"Insurance": {
+				"panelColor": "#4FA997",
+				"methVisible": "true",
+				"relVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 908,
+						"Y": 440
+					}
+				}
+			},
+			"PayMethod": {
+				"panelColor": "#C4BD97",
+				"methVisible": "true",
+				"relVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 411,
+						"Y": 11
+					}
+				}
+			},
+			"Account": {
+				"panelColor": "#fff",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 1215,
+						"Y": 381
+					}
+				}
+			},
+			"Doctor": {
+				"panelColor": "#E5B9B7",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 438,
+						"Y": 716
+					}
+				}
+			},
+			"Service": {
+				"panelColor": "#BFBFBF",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 1171,
+						"Y": 30
+					}
+				}
+			},
+			"Clinic": {
+				"panelColor": "#CCC1D9",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 899,
+						"Y": 818
+					}
+				}
+			},
+			"Specialty": {
+				"panelColor": "#D7E3BC",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 82,
+						"Y": 909
+					}
+				}
+			},
+			"History": {
+				"panelColor": "#B2A2C7",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 903,
+						"Y": 252
+					}
+				}
+			},
+			"Dd": {
+				"panelColor": "#C4BD97",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"relVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"isOpen": "false",
+					"position": {
+						"X": 395,
+						"Y": 20
+					}
+				}
+			},
+			"Session": {
+				"panelColor": "#7F7F7F",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"relVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"isOpen": "false",
+					"pathVisible": true,
+					"position": {
+						"X": 1228,
+						"Y": 623
+					}
+				}
+			},
+			"Patient": {
+				"panelColor": "#C3D69B",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"relVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 408,
+						"Y": 373
+					}
+				}
+			},
+			"Bill": {
+				"panelColor": "#E5B9B7",
+				"flatVisible": "true",
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"relVisible": "true",
+				"panel": {
+					"isOpen": "true",
+					"pathVisible": true,
+					"position": {
+						"X": 758,
+						"Y": 35
+					}
+				}
+			},
+			"Billing": {
+				"methVisible": "true",
+				"methodInhVisible": "true",
+				"panel": {
+					"position": {
+						"X": 847,
+						"Y": 25
+					},
+					"isOpen": "true"
+				},
+				"flatVisible": "true",
+				"panelColor": "#D88CFF"
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 240,
+			"workspaceTop": 0,
+			"methodShowMode": "true",
+			"methodInhShowMode": "true",
+			"relShowMode": "true",
+			"lastScriptLocation": {
+				"Person": {
+					"method": "Person/Person-methods.js"
+				},
+				"PayMethod": {
+					"method": "PayMethod/PayMethod-methods.js"
+				}
+			},
+			"relationCurve": {
+				"run": true,
+				"mode": 1
+			}
+		}
+	},
+	"dataClasses": [
+		{
+			"name": "Account",
+			"className": "Account",
+			"collectionName": "AccountCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "login",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "password",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			]
+		},
+		{
+			"name": "Billing",
+			"className": "Billing",
+			"collectionName": "BillingCollection",
+			"matchTable": "Billing",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "billdate",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "paid",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "service",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Service",
+					"path": "Service"
+				},
+				{
+					"name": "paymethod",
+					"kind": "relatedEntity",
+					"matchColumn": "paymentmethod,payment",
+					"scope": "public",
+					"type": "PayMethod",
+					"path": "PayMethod"
+				}
+			]
+		},
+		{
+			"name": "Clinic",
+			"className": "Clinic",
+			"collectionName": "ClinicCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "name",
+					"kind": "storage",
+					"matchColumn": "clinicname",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "nickname",
+					"kind": "storage",
+					"matchColumn": "n",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "boss",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "admin",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "rating",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "doctorCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "DoctorCollection",
+					"reversePath": true,
+					"path": "clinic"
+				}
+			]
+		},
+		{
+			"name": "Dd",
+			"className": "Dd",
+			"collectionName": "DdCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"className": "Doctor",
+			"collectionName": "DoctorCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "personid",
+					"kind": "storage",
+					"matchColumn": "person",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "nickname",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "boss",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "rating",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "clinic",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Clinic",
+					"path": "Clinic"
+				},
+				{
+					"name": "specialty",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Specialty",
+					"path": "Specialty"
+				},
+				{
+					"name": "sessionCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "SessionCollection",
+					"reversePath": true,
+					"path": "doctor"
+				}
+			]
+		},
+		{
+			"name": "History",
+			"className": "History",
+			"collectionName": "HistoryCollection",
+			"matchTable": "PatHistory",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "service",
+					"kind": "relatedEntity",
+					"matchColumn": "services,service,services,service",
+					"scope": "public",
+					"type": "Service",
+					"path": "Service"
+				},
+				{
+					"name": "patient",
+					"kind": "relatedEntity",
+					"matchColumn": "patients",
+					"scope": "public",
+					"type": "Patient",
+					"path": "Patient"
+				}
+			]
+		},
+		{
+			"name": "Insurance",
+			"className": "Insurance",
+			"collectionName": "InsuranceCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "policy",
+					"kind": "storage",
+					"matchColumn": "police",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "policeid",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "insurer",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "insphone",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "insaddress",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "inscontacts",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "patient",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Patient",
+					"path": "Patient"
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"className": "Patient",
+			"collectionName": "PatientCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "personid",
+					"kind": "storage",
+					"matchColumn": "person",
+					"scope": "public",
+					"type": "long"
+				},
+				{
+					"name": "nickname",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "insuranceCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "InsuranceCollection",
+					"reversePath": true,
+					"path": "patient"
+				},
+				{
+					"name": "historyCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "HistoryCollection",
+					"reversePath": true,
+					"path": "patient"
+				},
+				{
+					"name": "sessionCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "SessionCollection",
+					"reversePath": true,
+					"path": "patient"
+				},
+				{
+					"name": "services",
+					"scope": "public",
+					"reversePath": false,
+					"path": "historyCollection.service",
+					"type": "Service",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"name": "PayMethod",
+			"className": "PayMethod",
+			"collectionName": "PayMethodCollection",
+			"matchTable": "Ccard",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "paymethod",
+					"kind": "storage",
+					"matchColumn": "paytool",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "ccid",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "pwd",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "login",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "accounturl",
+					"kind": "storage",
+					"matchColumn": "url",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "paynum",
+					"kind": "storage",
+					"matchColumn": "payid",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "paysupport",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "billingCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "BillingCollection",
+					"reversePath": true,
+					"path": "paymethod"
+				},
+				{
+					"name": "services",
+					"scope": "public",
+					"reversePath": false,
+					"path": "billingCollection.service",
+					"type": "Service",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"name": "Person",
+			"className": "Person",
+			"collectionName": "PersonCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "gender",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "photo",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
+				},
+				{
+					"name": "name",
+					"kind": "calculated",
+					"matchColumn": "Name",
+					"scope": "public",
+					"type": "string",
+					"scriptKind": "javascript"
+				},
+				{
+					"name": "firstname",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "secondname",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "birth",
+					"kind": "storage",
+					"scope": "public",
+					"type": "date",
+					"simpleDate": false
+				},
+				{
+					"name": "email",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "mobphone",
+					"kind": "storage",
+					"matchColumn": "mobile",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "wphone",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "hphone",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "address",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "skype",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "whatsapp",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "telegram",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "growth",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "weight",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "blood",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "sk",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			],
+			"methods": [
+				{
+					"name": "getPersonalData",
+					"applyTo": "dataClass",
+					"scope": "publicOnServer",
+					"from": "$mainModel.Person.methods.getPersonalData",
+					"userDefined": true
+				},
+				{
+					"name": "setPersonalData",
+					"applyTo": "dataClass",
+					"scope": "publicOnServer",
+					"from": "$mainModel.Person.methods.setPersonalData",
+					"userDefined": true
+				}
+			]
+		},
+		{
+			"name": "Service",
+			"className": "Service",
+			"collectionName": "ServiceCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "name",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "historyCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "HistoryCollection",
+					"reversePath": true,
+					"path": "service"
+				},
+				{
+					"name": "billingCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "BillingCollection",
+					"reversePath": true,
+					"path": "service"
+				},
+				{
+					"name": "patients",
+					"scope": "public",
+					"reversePath": false,
+					"path": "historyCollection.patient",
+					"type": "Patient",
+					"kind": "relatedEntities"
+				},
+				{
+					"name": "paymethods",
+					"scope": "public",
+					"reversePath": false,
+					"path": "billingCollection.paymethod",
+					"type": "PayMethod",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"name": "Session",
+			"className": "Session",
+			"collectionName": "SessionCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "type",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "doctor",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Doctor",
+					"path": "Doctor"
+				},
+				{
+					"name": "patient",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Patient",
+					"path": "Patient"
+				}
+			]
+		},
+		{
+			"name": "Specialty",
+			"className": "Specialty",
+			"collectionName": "SpecialtyCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"type": "long",
+					"primKey": true
+				},
+				{
+					"name": "spname",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "doctorCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "DoctorCollection",
+					"reversePath": true,
+					"path": "specialty"
+				}
+			]
+		}
+	]
+}
