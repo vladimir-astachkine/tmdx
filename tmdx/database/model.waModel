@@ -12,8 +12,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 10,
-						"Y": 43
+						"X": 25,
+						"Y": 15
 					}
 				}
 			},
@@ -26,8 +26,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 908,
-						"Y": 440
+						"X": 894,
+						"Y": 616
 					}
 				}
 			},
@@ -55,23 +55,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 1215,
-						"Y": 381
-					}
-				}
-			},
-			"Doctor": {
-				"panelColor": "#E5B9B7",
-				"flatVisible": "true",
-				"methVisible": "true",
-				"methodInhVisible": "true",
-				"relVisible": "true",
-				"panel": {
-					"isOpen": "true",
-					"pathVisible": true,
-					"position": {
-						"X": 438,
-						"Y": 716
+						"X": 1277,
+						"Y": 406
 					}
 				}
 			},
@@ -100,8 +85,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 899,
-						"Y": 818
+						"X": 1199,
+						"Y": 945
 					}
 				}
 			},
@@ -115,8 +100,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 82,
-						"Y": 909
+						"X": 589,
+						"Y": 967
 					}
 				}
 			},
@@ -130,22 +115,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 903,
-						"Y": 252
-					}
-				}
-			},
-			"Dd": {
-				"panelColor": "#C4BD97",
-				"flatVisible": "true",
-				"methVisible": "true",
-				"relVisible": "true",
-				"methodInhVisible": "true",
-				"panel": {
-					"isOpen": "false",
-					"position": {
-						"X": 395,
-						"Y": 20
+						"X": 881,
+						"Y": 372
 					}
 				}
 			},
@@ -156,26 +127,11 @@
 				"relVisible": "true",
 				"methodInhVisible": "true",
 				"panel": {
-					"isOpen": "false",
-					"pathVisible": true,
-					"position": {
-						"X": 1228,
-						"Y": 623
-					}
-				}
-			},
-			"Patient": {
-				"panelColor": "#C3D69B",
-				"flatVisible": "true",
-				"methVisible": "true",
-				"relVisible": "true",
-				"methodInhVisible": "true",
-				"panel": {
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 408,
-						"Y": 373
+						"X": 1306,
+						"Y": 664
 					}
 				}
 			},
@@ -197,27 +153,28 @@
 			"Billing": {
 				"methVisible": "true",
 				"methodInhVisible": "true",
+				"flatVisible": "true",
+				"panelColor": "#D88CFF",
 				"panel": {
+					"isOpen": "true",
 					"position": {
 						"X": 847,
 						"Y": 25
-					},
-					"isOpen": "true"
-				},
-				"flatVisible": "true",
-				"panelColor": "#D88CFF"
+					}
+				}
 			}
 		},
 		"model": {
 			"scriptMode": "manual",
-			"workspaceLeft": 240,
-			"workspaceTop": 0,
+			"workspaceLeft": 0,
+			"workspaceTop": 8,
 			"methodShowMode": "true",
 			"methodInhShowMode": "true",
 			"relShowMode": "true",
 			"lastScriptLocation": {
 				"Person": {
-					"method": "Person/Person-methods.js"
+					"method": "Person/Person-methods.js",
+					"events": "Person/Person-events.js"
 				},
 				"PayMethod": {
 					"method": "PayMethod/PayMethod-methods.js"
@@ -256,6 +213,13 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "string"
+				},
+				{
+					"name": "person",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Person",
+					"path": "Person"
 				}
 			]
 		},
@@ -335,111 +299,18 @@
 					"type": "string"
 				},
 				{
-					"name": "boss",
-					"kind": "storage",
-					"scope": "public",
-					"type": "long"
-				},
-				{
-					"name": "admin",
-					"kind": "storage",
-					"scope": "public",
-					"type": "long"
-				},
-				{
 					"name": "rating",
 					"kind": "storage",
 					"scope": "public",
 					"type": "long"
 				},
 				{
-					"name": "doctorCollection",
+					"name": "personCollection",
 					"kind": "relatedEntities",
 					"scope": "public",
-					"type": "DoctorCollection",
+					"type": "PersonCollection",
 					"reversePath": true,
 					"path": "clinic"
-				}
-			]
-		},
-		{
-			"name": "Dd",
-			"className": "Dd",
-			"collectionName": "DdCollection",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				}
-			]
-		},
-		{
-			"name": "Doctor",
-			"className": "Doctor",
-			"collectionName": "DoctorCollection",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "personid",
-					"kind": "storage",
-					"matchColumn": "person",
-					"scope": "public",
-					"type": "long"
-				},
-				{
-					"name": "nickname",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "boss",
-					"kind": "storage",
-					"scope": "public",
-					"type": "bool"
-				},
-				{
-					"name": "rating",
-					"kind": "storage",
-					"scope": "public",
-					"type": "long"
-				},
-				{
-					"name": "clinic",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Clinic",
-					"path": "Clinic"
-				},
-				{
-					"name": "specialty",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Specialty",
-					"path": "Specialty"
-				},
-				{
-					"name": "sessionCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "SessionCollection",
-					"reversePath": true,
-					"path": "doctor"
 				}
 			]
 		},
@@ -468,12 +339,11 @@
 					"path": "Service"
 				},
 				{
-					"name": "patient",
+					"name": "person",
 					"kind": "relatedEntity",
-					"matchColumn": "patients",
 					"scope": "public",
-					"type": "Patient",
-					"path": "Patient"
+					"type": "Person",
+					"path": "Person"
 				}
 			]
 		},
@@ -506,6 +376,12 @@
 					"type": "string"
 				},
 				{
+					"name": "barcode",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
 					"name": "insurer",
 					"kind": "storage",
 					"scope": "public",
@@ -530,73 +406,11 @@
 					"type": "string"
 				},
 				{
-					"name": "patient",
+					"name": "person",
 					"kind": "relatedEntity",
 					"scope": "public",
-					"type": "Patient",
-					"path": "Patient"
-				}
-			]
-		},
-		{
-			"name": "Patient",
-			"className": "Patient",
-			"collectionName": "PatientCollection",
-			"scope": "public",
-			"attributes": [
-				{
-					"name": "ID",
-					"kind": "storage",
-					"scope": "public",
-					"unique": true,
-					"autosequence": true,
-					"type": "long",
-					"primKey": true
-				},
-				{
-					"name": "personid",
-					"kind": "storage",
-					"matchColumn": "person",
-					"scope": "public",
-					"type": "long"
-				},
-				{
-					"name": "nickname",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "insuranceCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "InsuranceCollection",
-					"reversePath": true,
-					"path": "patient"
-				},
-				{
-					"name": "historyCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "HistoryCollection",
-					"reversePath": true,
-					"path": "patient"
-				},
-				{
-					"name": "sessionCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "SessionCollection",
-					"reversePath": true,
-					"path": "patient"
-				},
-				{
-					"name": "services",
-					"scope": "public",
-					"reversePath": false,
-					"path": "historyCollection.service",
-					"type": "Service",
-					"kind": "relatedEntities"
+					"type": "Person",
+					"path": "Person"
 				}
 			]
 		},
@@ -630,6 +444,13 @@
 					"type": "string"
 				},
 				{
+					"name": "paynum",
+					"kind": "storage",
+					"matchColumn": "payid",
+					"scope": "public",
+					"type": "string"
+				},
+				{
 					"name": "pwd",
 					"kind": "storage",
 					"scope": "public",
@@ -649,13 +470,6 @@
 					"type": "string"
 				},
 				{
-					"name": "paynum",
-					"kind": "storage",
-					"matchColumn": "payid",
-					"scope": "public",
-					"type": "string"
-				},
-				{
 					"name": "paysupport",
 					"kind": "storage",
 					"scope": "public",
@@ -671,11 +485,10 @@
 				},
 				{
 					"name": "services",
+					"kind": "relatedEntities",
 					"scope": "public",
-					"reversePath": false,
-					"path": "billingCollection.service",
-					"type": "Service",
-					"kind": "relatedEntities"
+					"type": "ServiceCollection",
+					"path": "billingCollection.service"
 				}
 			]
 		},
@@ -695,26 +508,6 @@
 					"primKey": true
 				},
 				{
-					"name": "gender",
-					"kind": "storage",
-					"scope": "public",
-					"type": "string"
-				},
-				{
-					"name": "photo",
-					"kind": "storage",
-					"scope": "public",
-					"type": "image"
-				},
-				{
-					"name": "name",
-					"kind": "calculated",
-					"matchColumn": "Name",
-					"scope": "public",
-					"type": "string",
-					"scriptKind": "javascript"
-				},
-				{
 					"name": "firstname",
 					"kind": "storage",
 					"scope": "public",
@@ -727,11 +520,77 @@
 					"type": "string"
 				},
 				{
+					"name": "name",
+					"kind": "calculated",
+					"matchColumn": "Name",
+					"scope": "public",
+					"type": "string",
+					"scriptKind": "javascript"
+				},
+				{
+					"name": "birthday",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"minValue": "1",
+					"maxValue": "31",
+					"defaultFormat": [
+						{
+							"presentation": "text"
+						}
+					]
+				},
+				{
+					"name": "birthmon",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"minValue": "1",
+					"maxValue": "12",
+					"defaultFormat": [
+						{
+							"presentation": "text"
+						}
+					]
+				},
+				{
+					"name": "birthyear",
+					"kind": "storage",
+					"scope": "public",
+					"type": "long",
+					"minValue": "1900",
+					"defaultFormat": [
+						{
+							"presentation": "text"
+						}
+					]
+				},
+				{
 					"name": "birth",
 					"kind": "storage",
 					"scope": "public",
 					"type": "date",
-					"simpleDate": false
+					"simpleDate": true
+				},
+				{
+					"name": "male",
+					"kind": "storage",
+					"matchColumn": "gender",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "female",
+					"kind": "storage",
+					"matchColumn": "femaile",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "photo",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
 				},
 				{
 					"name": "email",
@@ -805,6 +664,109 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "string"
+				},
+				{
+					"name": "imsi",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "imei",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "patient",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "doctor",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "clinicboss",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "clinicadmin",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "trailingdate",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage",
+					"matchColumn": "trailing"
+				},
+				{
+					"name": "trailingperson",
+					"scope": "public",
+					"type": "long64",
+					"kind": "storage"
+				},
+				{
+					"name": "accountCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "AccountCollection",
+					"reversePath": true,
+					"path": "person"
+				},
+				{
+					"name": "insuranceCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "InsuranceCollection",
+					"reversePath": true,
+					"path": "person"
+				},
+				{
+					"name": "sessionCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "SessionCollection",
+					"reversePath": true,
+					"path": "person"
+				},
+				{
+					"name": "specialtyCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "SpecialtyCollection",
+					"reversePath": true,
+					"path": "person"
+				},
+				{
+					"name": "historyCollection",
+					"kind": "relatedEntities",
+					"scope": "public",
+					"type": "HistoryCollection",
+					"reversePath": true,
+					"path": "person"
+				},
+				{
+					"name": "clinic",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Clinic",
+					"path": "Clinic"
+				}
+			],
+			"events": [
+				{
+					"kind": "init",
+					"from": "$mainModel.Person.events.init",
+					"userDefined": true
 				}
 			],
 			"methods": [
@@ -846,6 +808,24 @@
 					"type": "string"
 				},
 				{
+					"name": "code",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "price",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
+					"name": "hours",
+					"kind": "storage",
+					"scope": "public",
+					"type": "number"
+				},
+				{
 					"name": "historyCollection",
 					"kind": "relatedEntities",
 					"scope": "public",
@@ -862,20 +842,11 @@
 					"path": "service"
 				},
 				{
-					"name": "patients",
-					"scope": "public",
-					"reversePath": false,
-					"path": "historyCollection.patient",
-					"type": "Patient",
-					"kind": "relatedEntities"
-				},
-				{
 					"name": "paymethods",
+					"kind": "relatedEntities",
 					"scope": "public",
-					"reversePath": false,
-					"path": "billingCollection.paymethod",
-					"type": "PayMethod",
-					"kind": "relatedEntities"
+					"type": "PayMethodCollection",
+					"path": "billingCollection.paymethod"
 				}
 			]
 		},
@@ -901,18 +872,11 @@
 					"type": "string"
 				},
 				{
-					"name": "doctor",
+					"name": "person",
 					"kind": "relatedEntity",
 					"scope": "public",
-					"type": "Doctor",
-					"path": "Doctor"
-				},
-				{
-					"name": "patient",
-					"kind": "relatedEntity",
-					"scope": "public",
-					"type": "Patient",
-					"path": "Patient"
+					"type": "Person",
+					"path": "Person"
 				}
 			]
 		},
@@ -938,14 +902,21 @@
 					"type": "string"
 				},
 				{
-					"name": "doctorCollection",
-					"kind": "relatedEntities",
+					"name": "spcode",
+					"kind": "storage",
+					"matchColumn": "cpcode",
 					"scope": "public",
-					"type": "DoctorCollection",
-					"reversePath": true,
-					"path": "specialty"
+					"type": "string"
+				},
+				{
+					"name": "person",
+					"kind": "relatedEntity",
+					"scope": "public",
+					"type": "Person",
+					"path": "Person"
 				}
 			]
 		}
-	]
+	],
+	"type": []
 }

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-	<folder path="./database/data/">
-		<tag name="dataFolder"/>
-	</folder>
-	<file path="./database/model.waModel">
-		<tag name="catalog"/>
-	</file>
 	<folder path="./database/backups/">
 		<tag name="Backups"/>
 	</folder>
@@ -18,6 +12,12 @@
 	<folder path="./web/">
 		<tag name="webFolder"/>
 	</folder>
+	<folder path="./database/">
+		<tag name="dataFolder"/>
+	</folder>
+	<file path="./database/model.waModel">
+		<tag name="catalog"/>
+	</file>
 	<file path="./backend/settings.waSettings">
 		<tag name="settings"/>
 	</file>
