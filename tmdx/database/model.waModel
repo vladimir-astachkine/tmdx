@@ -166,8 +166,8 @@
 		},
 		"model": {
 			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 8,
+			"workspaceLeft": 9,
+			"workspaceTop": 0,
 			"methodShowMode": "true",
 			"methodInhShowMode": "true",
 			"relShowMode": "true",
@@ -520,6 +520,12 @@
 					"type": "string"
 				},
 				{
+					"name": "fathername",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
 					"name": "name",
 					"kind": "calculated",
 					"matchColumn": "Name",
@@ -678,41 +684,53 @@
 					"type": "string"
 				},
 				{
-					"name": "patient",
+					"name": "ispatient",
 					"kind": "storage",
 					"scope": "public",
-					"type": "bool"
+					"type": "bool",
+					"matchColumn": "patient"
 				},
 				{
-					"name": "doctor",
+					"name": "isdoctor",
 					"kind": "storage",
 					"scope": "public",
-					"type": "bool"
+					"type": "bool",
+					"matchColumn": "doctor"
 				},
 				{
-					"name": "clinicboss",
+					"name": "isclinicboss",
 					"kind": "storage",
 					"scope": "public",
-					"type": "bool"
+					"type": "bool",
+					"matchColumn": "clinicboss"
 				},
 				{
-					"name": "clinicadmin",
+					"name": "isclinicadmin",
 					"kind": "storage",
 					"scope": "public",
-					"type": "bool"
+					"type": "bool",
+					"matchColumn": "clinicadmin"
+				},
+				{
+					"name": "doctorrating",
+					"scope": "public",
+					"type": "long",
+					"kind": "storage",
+					"matchColumn": "rating"
 				},
 				{
 					"name": "trailingdate",
+					"kind": "storage",
+					"matchColumn": "trailing",
 					"scope": "public",
 					"type": "date",
-					"kind": "storage",
-					"matchColumn": "trailing"
+					"simpleDate": false
 				},
 				{
 					"name": "trailingperson",
+					"kind": "storage",
 					"scope": "public",
-					"type": "long64",
-					"kind": "storage"
+					"type": "long64"
 				},
 				{
 					"name": "accountCollection",

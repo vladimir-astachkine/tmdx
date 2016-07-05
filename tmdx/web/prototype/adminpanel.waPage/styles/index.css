@@ -3,6 +3,15 @@
 	Changes to this CSS file might be lost when it is regenerated.
 */
 
+#dataGrid6 {
+	z-index: 2;
+	width: 963px;
+	height: 300px;
+	top: 18px;
+	left: 17px;
+	position: absolute;
+}
+
 #label13 {
 	z-index: 12;
 	width: auto;
@@ -29,7 +38,7 @@
 	top: 651px;
 	left: 18px;
 	position: absolute;
-	background-color: rgb(170, 255, 255);
+	background-color: rgb(229, 229, 229);
 	font-size: 15px;
 	border-top-left-radius: 10px;
 	-moz-border-radius-topleft: 10px;
@@ -157,7 +166,7 @@
 #label22 {
 	z-index: 6;
 	width: auto;
-	height: 18px;
+	height: 17px;
 	top: 259px;
 	left: 34px;
 	position: absolute;
@@ -168,7 +177,7 @@
 #label21 {
 	z-index: 4;
 	width: auto;
-	height: 18px;
+	height: 17px;
 	top: 236px;
 	left: 34px;
 	position: absolute;
@@ -179,7 +188,7 @@
 #label20 {
 	z-index: 2;
 	width: auto;
-	height: 18px;
+	height: 17px;
 	top: 128px;
 	left: 16px;
 	position: absolute;
@@ -626,7 +635,7 @@
 	top: 1056px;
 	left: 23px;
 	position: absolute;
-	background-color: rgb(170, 255, 255);
+	background-color: rgb(229, 229, 229);
 	font-size: 15px;
 	border-top-left-radius: 10px;
 	-moz-border-radius-topleft: 10px;
