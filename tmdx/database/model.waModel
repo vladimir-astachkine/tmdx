@@ -521,9 +521,9 @@
 				},
 				{
 					"name": "fathername",
+					"kind": "storage",
 					"scope": "public",
-					"type": "string",
-					"kind": "storage"
+					"type": "string"
 				},
 				{
 					"name": "name",
@@ -576,7 +576,14 @@
 					"kind": "storage",
 					"scope": "public",
 					"type": "date",
-					"simpleDate": true
+					"simpleDate": true,
+					"events": [
+						{
+							"kind": "init",
+							"from": "$mainModel.Person.birth.events.init",
+							"userDefined": true
+						}
+					]
 				},
 				{
 					"name": "male",
@@ -686,37 +693,37 @@
 				{
 					"name": "ispatient",
 					"kind": "storage",
+					"matchColumn": "patient",
 					"scope": "public",
-					"type": "bool",
-					"matchColumn": "patient"
+					"type": "bool"
 				},
 				{
 					"name": "isdoctor",
 					"kind": "storage",
+					"matchColumn": "doctor",
 					"scope": "public",
-					"type": "bool",
-					"matchColumn": "doctor"
+					"type": "bool"
 				},
 				{
 					"name": "isclinicboss",
 					"kind": "storage",
+					"matchColumn": "clinicboss",
 					"scope": "public",
-					"type": "bool",
-					"matchColumn": "clinicboss"
+					"type": "bool"
 				},
 				{
 					"name": "isclinicadmin",
 					"kind": "storage",
+					"matchColumn": "clinicadmin",
 					"scope": "public",
-					"type": "bool",
-					"matchColumn": "clinicadmin"
+					"type": "bool"
 				},
 				{
 					"name": "doctorrating",
-					"scope": "public",
-					"type": "long",
 					"kind": "storage",
-					"matchColumn": "rating"
+					"matchColumn": "rating",
+					"scope": "public",
+					"type": "long"
 				},
 				{
 					"name": "trailingdate",
@@ -781,6 +788,11 @@
 				}
 			],
 			"events": [
+				{
+					"kind": "load",
+					"from": "$mainModel.Person.events.load",
+					"userDefined": true
+				},
 				{
 					"kind": "init",
 					"from": "$mainModel.Person.events.init",
@@ -935,6 +947,5 @@
 				}
 			]
 		}
-	],
-	"type": []
+	]
 }
