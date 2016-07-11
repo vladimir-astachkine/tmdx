@@ -41,6 +41,10 @@
 			"type": "widget"
 		},
 		{
+			"id": "Widget/combobox",
+			"type": "widget"
+		},
+		{
 			"package": "softGray"
 		},
 		{

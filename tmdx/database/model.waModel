@@ -100,8 +100,8 @@
 					"isOpen": "true",
 					"pathVisible": true,
 					"position": {
-						"X": 589,
-						"Y": 967
+						"X": 724,
+						"Y": 1141
 					}
 				}
 			},
@@ -166,8 +166,8 @@
 		},
 		"model": {
 			"scriptMode": "manual",
-			"workspaceLeft": 9,
-			"workspaceTop": 0,
+			"workspaceLeft": 0,
+			"workspaceTop": 673,
 			"methodShowMode": "true",
 			"methodInhShowMode": "true",
 			"relShowMode": "true",
@@ -719,6 +719,12 @@
 					"type": "bool"
 				},
 				{
+					"name": "ischilddoctor",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
 					"name": "doctorrating",
 					"kind": "storage",
 					"matchColumn": "rating",
@@ -764,14 +770,6 @@
 					"path": "person"
 				},
 				{
-					"name": "specialtyCollection",
-					"kind": "relatedEntities",
-					"scope": "public",
-					"type": "SpecialtyCollection",
-					"reversePath": true,
-					"path": "person"
-				},
-				{
 					"name": "historyCollection",
 					"kind": "relatedEntities",
 					"scope": "public",
@@ -785,6 +783,13 @@
 					"scope": "public",
 					"type": "Clinic",
 					"path": "Clinic"
+				},
+				{
+					"name": "specialty",
+					"scope": "public",
+					"path": "Specialty",
+					"type": "Specialty",
+					"kind": "relatedEntity"
 				}
 			],
 			"events": [
@@ -939,11 +944,12 @@
 					"type": "string"
 				},
 				{
-					"name": "person",
-					"kind": "relatedEntity",
+					"name": "personCollection",
 					"scope": "public",
-					"type": "Person",
-					"path": "Person"
+					"reversePath": true,
+					"path": "specialty",
+					"type": "PersonCollection",
+					"kind": "relatedEntities"
 				}
 			]
 		}
